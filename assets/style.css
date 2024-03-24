@@ -1,0 +1,70 @@
+header {
+    display: flex;
+    justify-self: flex-end;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid black;
+    justify-content: flex-end;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+
+
+}
+#leftSide {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#000, #000) no-repeat right/2px 100%;
+    width: 920px;
+    height auto;
+}
+
+#leftSide h2 {
+    text-align: center;
+    margin: 20px;
+    padding-right: 20px;
+    height: 500px;
+    width: 500px;
+    background-color: rgb(175, 154, 12);
+    border-radius: 400px;
+    color: rgb(12, 13, 33);
+    border: 2px solid black;
+}
+#rightSide {
+    background: linear-gradient(#000, #000) no-repeat left/2px 100%;
+    width: 950px;
+    height: auto;
+}
+#rightSide h2 {
+text-align: center;
+margin: 0 auto;
+padding: 25px;
+width: 100%;
+height: auto;
+}
+form {
+
+}
+#rightSide form label {
+    
+    padding: 20px;
+    text-align: left;
+}
+#rightSide form input {
+   width: 90%;
+    margin: 10px 20px;
+    display: block;
+}
+
+#content {
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+}
+button {
+    margin: 10px 20px;
+}
