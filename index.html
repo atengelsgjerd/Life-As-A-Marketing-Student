@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <button id="toggle"></button>
         <h1>Welcome To My Journey...</h1>
     </header>
     <main>
@@ -21,12 +22,12 @@
                 What's On Your Mind?
             </h2>
             <form action="/url" method="post">
-                <label>Username</label> 
-                <input>
+                <label for="userName">Username</label> 
+                <input type="text" name="userName" id="userName">
                 <label>Title</label>
-                <input>
+                <input type="text" id="title">
                 <label>Content</label>
-                <input id="content">
+                <input type="text" id="content">
                 <button type="submit" id="submit-button">Submit</button>
             </form>
         </section>
