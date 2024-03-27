@@ -1,8 +1,12 @@
-const buttonToggle = document.querySelector("toggle");
+const buttonToggle = document.querySelector("#toggle");
 
 const userNameInput = document.querySelector("#userName");
 const titleInput = document.querySelector("#title");
 const contentInput = document.querySelector("#content");
+
+const body = document.querySelector("body");
+
+const sunIcon = document.querySelector("i");
 
 const addSubmitButton = document.querySelector("#submit-button");
 
@@ -27,6 +31,9 @@ const dayNight = function(setting){
 }
 
 const handleToggle = function(){
+    const element = document.body;
+    element.classList.toggle("dark-mode");
+ 
     //This code will handle the toggle from day to night.
 }
 
