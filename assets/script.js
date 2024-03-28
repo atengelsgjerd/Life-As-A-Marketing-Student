@@ -8,6 +8,8 @@ const body = document.querySelector("body");
 
 const sunIcon = document.querySelector("i");
 
+const blogPostForm = document.querySelector("#blogPost");
+
 const addSubmitButton = document.querySelector("#submit-button");
 
 addSubmitButton.addEventListener('click', function(event) {
@@ -23,12 +25,16 @@ addSubmitButton.addEventListener('click', function(event) {
 
     let newObject = localStorage.getItem("userObject");
     console.log(JSON.parse(newObject));
-})
+});
 
-const dayNight = function(setting){
+/*const dayNight = function(setting){
     //This code will change the icon from day setting to night setting.
     //This function will operate with the DOM, text content, Document Element, class list Methods.
-}
+}*/
+
+/*buttonToggle.on("click", function() {
+    $
+})*/
 
 const handleToggle = function(){
     const element = document.body;
@@ -48,7 +54,5 @@ const getSetting = function(){
 const setSetting = function(setting){
     //This code will save/set the setting.
 }
-
-dayNight(getSetting());
 
 buttonToggle.addEventListener('click', handleToggle);

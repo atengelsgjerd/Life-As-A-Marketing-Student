@@ -37,11 +37,12 @@ header i {
     width: fit-content;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     
 }
 #leftSide {
     background: linear-gradient(#000, #000) no-repeat right/2px 100%;
-    width: 920px;
+    width: 800px;
     height auto;
 }
 
