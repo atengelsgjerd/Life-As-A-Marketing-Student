@@ -20,22 +20,19 @@ addSubmitButton.addEventListener('click', function(event) {
         title: titleInput.value,
         content: contentInput.value,
     }
-    
-    localStorage.setItem("userObject", JSON.stringify(userObject));
+    let savedPosts = localStorage.getItem("userPosts");
+    let postsArray = savedPosts ? JSON.parse(savedPosts) : [];
 
-    let newObject = localStorage.getItem("userObject");
-    console.log(JSON.parse(newObject));
+    postsArray.push(userObject);
+    localStorage.setItem("userPosts", JSON.stringify(postsArray));
+
+   window.location.href = "blog.html";
 });
 
-/*const dayNight = function(setting){
-    //This code will change the icon from day setting to night setting.
-    //This function will operate with the DOM, text content, Document Element, class list Methods.
-}*/
-
-/*buttonToggle.on("click", function() {
-    $
-})*/
-
+function myFunction(x) {
+    x.querySelector('i').classList.toggle("bi-brightness-high-fill");
+    x.querySelector('i').classList.toggle("bi-moon-fill");
+}
 const handleToggle = function(){
     const element = document.body;
     element.classList.toggle("dark-mode");
@@ -44,6 +41,7 @@ const handleToggle = function(){
 }
 
 const readStorage = function(){
+
     //This code will read local storage.
 }
 
