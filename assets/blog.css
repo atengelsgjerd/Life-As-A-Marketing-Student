@@ -2,10 +2,46 @@
     box-sizing: border-box;
 }
 
-header button {
+ button {
     float: right;
 }
 
-header h1 {
+ h1 {
     float: left;
 }
+#posts-container div {
+
+}
+#toggle {
+    float: right;
+    cursor: pointer;
+    /*background: none;
+    border: none;*/
+}
+body {
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    
+  }
+  .dark-mode {
+    background-color: black;
+    color: rgb(243, 243, 243);
+    border: white;
+  }
+  footer { /*The footer has 5 pixels of padding surrounding it and has a sage green background color and has a height of 50 pixels.*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+      padding: 5px;
+      border: 2px solid black;
+      height: 50px;
+    }
+    footer ul {
+      list-style-type: none;
+    }
+    .contactInfo { /*Elements with the .contactInfo class selector have a display of inline-block so that they are positioned horizontally to one another.
+      Elements with the .contactInfo class selector have 5 pixels of padding around them.*/
+      display: inline-block;
+      padding: 5px; 
+    }

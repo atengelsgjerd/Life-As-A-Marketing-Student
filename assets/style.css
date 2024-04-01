@@ -92,3 +92,19 @@ form {
 button {
     margin: 10px 20px;
 }
+footer { /*The footer has 5 pixels of padding surrounding it and has a sage green background color and has a height of 50 pixels.*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+      padding: 5px;
+      border: 2px solid black;
+      height: 50px;
+    }
+    footer ul {
+      list-style-type: none;
+    }
+    .contactInfo { /*Elements with the .contactInfo class selector have a display of inline-block so that they are positioned horizontally to one another.
+      Elements with the .contactInfo class selector have 5 pixels of padding around them.*/
+      display: inline-block;
+      padding: 5px; 
+    }

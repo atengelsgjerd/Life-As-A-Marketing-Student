@@ -15,18 +15,29 @@ const addSubmitButton = document.querySelector("#submit-button");
 addSubmitButton.addEventListener('click', function(event) {
     event.preventDefault();
 
+    console.log('Submit button clicked');
+
+    // Check if any of the input fields are empty
+    if (userNameInput.value === '' || titleInput.value === '' || contentInput.value === '') {
+        alert('Please complete all fields before submitting.');
+        console.log('One or more fields are empty');
+        return; // Stop the function execution if any field is empty
+    }
+
     const userObject = {
         userName: userNameInput.value,
         title: titleInput.value,
         content: contentInput.value,
-    }
+    };
+
     let savedPosts = localStorage.getItem("userPosts");
     let postsArray = savedPosts ? JSON.parse(savedPosts) : [];
-
+    
     postsArray.push(userObject);
     localStorage.setItem("userPosts", JSON.stringify(postsArray));
-
-   window.location.href = "blog.html";
+    
+    // Only redirect if all fields are filled
+    window.location.href = "blog.html";
 });
 
 function myFunction(x) {
@@ -38,19 +49,6 @@ const handleToggle = function(){
     element.classList.toggle("dark-mode");
  
     //This code will handle the toggle from day to night.
-}
-
-const readStorage = function(){
-
-    //This code will read local storage.
-}
-
-const getSetting = function(){
-    //This code will get our day/night setting from local storage.
-}
-
-const setSetting = function(setting){
-    //This code will save/set the setting.
 }
 
 buttonToggle.addEventListener('click', handleToggle);
